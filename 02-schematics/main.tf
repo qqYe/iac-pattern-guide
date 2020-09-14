@@ -25,7 +25,7 @@ resource "ibm_is_instance" "iac_test_instance" {
 
   user_data = <<-EOUD
               #!/bin/bash
-              echo "Hello Beautiful World --QQY" > index.html
+              echo "Hello Beautiful World --QQY 2ºchange" > index.html
               nohup busybox httpd -f -p ${var.port} &
               EOUD
 
